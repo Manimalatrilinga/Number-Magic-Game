@@ -1,0 +1,115 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.navbar {
+    background-color: #2c3e50 !important; /* Dark blue navbar */
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #ecf0f1 !important; /* Light gray navbar links */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f39c12 !important; /* Orange hover effect */
+}
+
+.container {
+    background-color: #fff; /* White container background */
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Allow container to grow and take available space */
+}
+
+.jumbotron {
+    background-color: #e0f7fa; /* Light cyan jumbotron */
+    padding: 25px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #3498db; /* Blue primary button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.btn-success {
+    background-color: #2ecc71; /* Green success button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+#finalResult {
+    background-color: #f9e79f; /* Light yellow for final result */
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+#aboutUsSection {
+    background-color: #d4edda; /* Light green for about us */
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+#aboutUsSection h2, #finalResult h2 {
+    color: #383d41; /* Dark text for headings in these sections */
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#nextToGameBtn {
+    background-color: #8e44ad; /* Purple next button */
+    color: #fff;
+}
+
+#nextToGameBtn:hover {
+    background-color: #75388e; /* Darker purple on hover */
+}

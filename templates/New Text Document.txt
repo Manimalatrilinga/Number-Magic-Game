@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Number Magic</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log In/Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to the Number Magic Game!</h1>
+            <p class="lead">Experience the amazing prediction power of the Admin.</p>
+            <hr class="my-4">
+            <h3>Instructions:</h3>
+            <ol class="lead">
+                <li>This is a simple number game you can play in your free time.</li>
+                <li><strong>About the Game:</strong> You (the User) will choose three 4-digit numbers. The Admin (the background compiler) will also generate three 4-digit numbers. The Admin cannot use a calculator and will predict the final sum.</li>
+                <li>The numbers you provide are only visible to you. The Admin will reveal the final sum without knowing your intermediate inputs (that's the magic!).</li>
+                <li>Click the "Start Game" button below to begin and see the magic unfold!</li>
+            </ol>
+            <button id="startGameBtn" class="btn btn-primary btn-lg">Start Game</button>
+        </div>
+
+        <div id="gameArea" class="mt-4" style="display: none;">
+            <div id="userTurn1" class="mb-3">
+                <h3>Your Turn (1st Number)</h3>
+                <input type="number" id="userNumber1" class="form-control" placeholder="Enter a 4-digit number (1000-9999)">
+                <button id="submitNumber1" class="btn btn-success mt-2">Submit</button>
+                <p id="adminResponse1" class="mt-2"></p>
+            </div>
+
+            <div id="userTurn2" class="mb-3" style="display: none;">
+                <h3>Your Turn (2nd Number)</h3>
+                <input type="number" id="userNumber2" class="form-control" placeholder="Enter a 4-digit number (1000-9999)">
+                <button id="submitNumber2" class="btn btn-success mt-2">Submit</button>
+                <p id="adminResponse2" class="mt-2"></p>
+            </div>
+
+            <div id="userTurn3" class="mb-3" style="display: none;">
+                <h3>Your Turn (3rd Number)</h3>
+                <input type="number" id="userNumber3" class="form-control" placeholder="Enter a 4-digit number (1000-9999)">
+                <button id="submitNumber3" class="btn btn-success mt-2">Submit</button>
+                <p id="adminResponse3" class="mt-2"></p>
+            </div>
+
+            <div id="finalResult" style="display: none;">
+                <h2>The Admin's Prediction!</h2>
+                <p id="predictedSum" class="lead"></p>
+                <p>Amazing, isn't it? The Admin predicted the sum without knowing all your numbers!</p>
+                <p>Want to know the secret behind the magic? <a href="#">Contact Us</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="static/script.js"></script>
+</body>
+</html>
